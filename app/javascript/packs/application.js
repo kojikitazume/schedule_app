@@ -8,6 +8,23 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+// Import Bootstrap and its dependencies
+import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/css/bootstrap'
+
+// Import Flatpickr and its CSS
+import flatpickr from "flatpickr"
+import "flatpickr/dist/flatpickr.css"
+
+// Initialize Rails, Turbolinks, and ActiveStorage
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// Initialize Flatpickr on elements with the "datepicker" class
+document.addEventListener("turbolinks:load", () => {
+  flatpickr(".datepicker", {
+    dateFormat: "Y/m/d",
+    locale: "ja"
+  });
+});
