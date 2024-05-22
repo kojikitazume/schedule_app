@@ -12,7 +12,7 @@ class Schedule < ApplicationRecord
     return if end_date.blank? || start_date.blank?
 
     if end_date < start_date
-      errors.add(:end_date, "must be after the start date")
+      errors.add(:end_date, "は開始日以降の日付でなければなりません")
       
     end
     
