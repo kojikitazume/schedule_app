@@ -1,0 +1,53 @@
+
+.Navbar {
+    background-color: #1c1d3b;
+    height: 50px;
+    margin-bottom: 24px;
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+  .Navbar__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0 auto;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  th {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+  }
+  
+  td {
+    background-color: white;
+    padding: 10px 35px;
+  }
+  
+  .notice {
+    background-color: rgb(17, 17, 205);
+    padding: 5px;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-item {
+    width: 20%; 
+  }
